@@ -1,0 +1,48 @@
+#include<stdio.h>
+#include<float.h>
+#include<math.h>
+void main()
+{
+	long double sum=0,a,s;
+	int i;
+	char c;
+	for(i=0;;i++)
+	{
+		if(i==0)
+		{
+			scanf("%Lf",&a);
+		        sum=sum+a;
+			getchar();
+			scanf("%c",&c);
+	  }
+		scanf("%Lf",&a);
+	  switch(c)
+	  {
+			   case '+':sum=sum+a;      //addition
+				 break;
+		     case '-':sum=sum-a;      //substraction
+				 break;
+	       case '*':sum=sum*a;      //multiplication
+         break;
+			   case '%':if(a==0)       //division
+				          {
+					            printf("\ncannot divide by zero\n");
+					            continue;
+				          }
+				         else
+				         {
+				    	        sum=sum/a;
+				         }
+			    break;
+		    	case 'a':                 //terminating case
+				           break;	 
+			  default:printf("enter valid operation\n");
+				break;
+		}
+		getchar();
+		scanf("%c",&c);
+		if(c=='a')
+			break;
+	}
+	printf("%Lf\n",sum);
+}
