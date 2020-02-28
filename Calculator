@@ -14,16 +14,16 @@ void main()
 		        sum=sum+a;
 			getchar();
 			scanf("%c",&c);
-	  }
+	        }
 		scanf("%Lf",&a);
-	  switch(c)
-	  {
+	       switch(c)
+	       {
 			   case '+':sum=sum+a;      //addition
 				 break;
-		     case '-':sum=sum-a;      //substraction
+		           case '-':sum=sum-a;      //substraction
 				 break;
-	       case '*':sum=sum*a;      //multiplication
-         break;
+	                   case '*':sum=sum*a;      //multiplication
+                                 break;
 			   case '%':if(a==0)       //division
 				          {
 					            printf("\ncannot divide by zero\n");
@@ -33,10 +33,10 @@ void main()
 				         {
 				    	        sum=sum/a;
 				         }
-			    break;
-		    	case 'a':                 //terminating case
-				           break;	 
-			  default:printf("enter valid operation\n");
+			        break;
+		    	   case 'a':                 //terminating case
+		                break;	 
+			   default:printf("enter valid operation\n");
 				break;
 		}
 		getchar();
